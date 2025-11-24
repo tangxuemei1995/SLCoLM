@@ -10,7 +10,8 @@ This repository contains the code and data for the paper "Language model collabo
 - `./code/span/` — SpERT small-model implementation (see: https://arxiv.org/abs/1909.07755).
 - `./code/SLCoLM/` — Implementation and examples for the SLM+LLM collaboration framework.
 
-Main scripts:
+
+In SLCoLM Main scripts:
 - `python model_collaboration.py`  
     Generate relation triplets based on SpERT predictions, relation type definitions, and example-driven outputs. 
 - `python eval.py`  
@@ -38,3 +39,4 @@ If you use this work, please cite:
         pages={104286}
 }
 ```
+if you have any question, open a issue or send a email to me (xuemeitang00@gmail.com).
