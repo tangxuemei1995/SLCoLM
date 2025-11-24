@@ -7,8 +7,8 @@ This repository contains the code and data for the paper "Language model collabo
 - `test.json` and `chisre_test.json` contain the same records but use different formats. Choose the file required by each script.
 
 ## Code layout
-- `span/` — SpERT small-model implementation (see: https://arxiv.org/abs/1909.07755).
-- `SLCoLM/` — Implementation and examples for the SLM+LLM collaboration framework.
+- `./code/span/` — SpERT small-model implementation (see: https://arxiv.org/abs/1909.07755).
+- `./code/SLCoLM/` — Implementation and examples for the SLM+LLM collaboration framework.
 
 Main scripts:
 - `python model_collaboration.py`  
