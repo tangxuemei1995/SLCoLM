@@ -1,0 +1,182 @@
+
+{'label': 'chisre', 'model_type': 'spert', 'model_path': '/ceph/home/jun01/tangxuemei/joint_re/span/spert/data/save/chisre/2023-11-27_14:54:26.772470/final_model', 'tokenizer_path': '/ceph/home/jun01/tangxuemei/joint_re/span/spert/data/save/chisre/2023-11-27_14:54:26.772470/final_model', 'dataset_path': 'data/datasets/chisre/chisre_test.json', 'types_path': 'data/datasets/chisre/chisre_types.json', 'eval_batch_size': '2', 'rel_filter_threshold': '0.4', 'size_embedding': '25', 'prop_drop': '0.1', 'max_span_size': '10', 'store_predictions': 'true', 'store_examples': 'true', 'sampling_processes': '4', 'max_pairs': '1000', 'log_path': 'data/log/'}
+Repeat 1 times
+--------------------------------------------------
+Iteration 0
+--------------------------------------------------
+2023-11-28 16:49:08,905 [MainThread  ] [INFO ]  Dataset: data/datasets/chisre/chisre_test.json
+2023-11-28 16:49:08,906 [MainThread  ] [INFO ]  Model: spert
+Parse dataset 'test': 100%|█████████████████████████████████████████████████████████████████████████████████████| 401/401 [00:00<00:00, 508.14it/s]
+2023-11-28 16:49:09,706 [MainThread  ] [INFO ]  Relation type count: 41
+2023-11-28 16:49:09,706 [MainThread  ] [INFO ]  Entity type count: 7
+2023-11-28 16:49:09,706 [MainThread  ] [INFO ]  Entities:
+2023-11-28 16:49:09,707 [MainThread  ] [INFO ]  No Entity=0
+2023-11-28 16:49:09,707 [MainThread  ] [INFO ]  人 物=1
+2023-11-28 16:49:09,707 [MainThread  ] [INFO ]  地 点=2
+2023-11-28 16:49:09,707 [MainThread  ] [INFO ]  时 间=3
+2023-11-28 16:49:09,707 [MainThread  ] [INFO ]  职 官=4
+2023-11-28 16:49:09,708 [MainThread  ] [INFO ]  书 籍=5
+2023-11-28 16:49:09,708 [MainThread  ] [INFO ]  团 体=6
+2023-11-28 16:49:09,708 [MainThread  ] [INFO ]  Relations:
+2023-11-28 16:49:09,709 [MainThread  ] [INFO ]  No Relation=0
+2023-11-28 16:49:09,709 [MainThread  ] [INFO ]  其 他=1
+2023-11-28 16:49:09,709 [MainThread  ] [INFO ]  到 达=2
+2023-11-28 16:49:09,709 [MainThread  ] [INFO ]  属 地=3
+2023-11-28 16:49:09,710 [MainThread  ] [INFO ]  攻 伐=4
+2023-11-28 16:49:09,710 [MainThread  ] [INFO ]  管 理=5
+2023-11-28 16:49:09,710 [MainThread  ] [INFO ]  生 于 （ 地 点 ）=6
+2023-11-28 16:49:09,710 [MainThread  ] [INFO ]  派 遣=7
+2023-11-28 16:49:09,711 [MainThread  ] [INFO ]  打 败=8
+2023-11-28 16:49:09,711 [MainThread  ] [INFO ]  任 职 & 爵 位 & 谥 号=9
+2023-11-28 16:49:09,711 [MainThread  ] [INFO ]  父=10
+2023-11-28 16:49:09,711 [MainThread  ] [INFO ]  杀=11
+2023-11-28 16:49:09,712 [MainThread  ] [INFO ]  兄 弟=12
+2023-11-28 16:49:09,712 [MainThread  ] [INFO ]  祖 孙=13
+2023-11-28 16:49:09,712 [MainThread  ] [INFO ]  别 名=14
+2023-11-28 16:49:09,712 [MainThread  ] [INFO ]  位 于=15
+2023-11-28 16:49:09,713 [MainThread  ] [INFO ]  政 治 奥 援=16
+2023-11-28 16:49:09,713 [MainThread  ] [INFO ]  救 援=17
+2023-11-28 16:49:09,713 [MainThread  ] [INFO ]  投 靠=18
+2023-11-28 16:49:09,713 [MainThread  ] [INFO ]  害 怕=19
+2023-11-28 16:49:09,714 [MainThread  ] [INFO ]  封 & 赐 官=20
+2023-11-28 16:49:09,714 [MainThread  ] [INFO ]  设 置=21
+2023-11-28 16:49:09,714 [MainThread  ] [INFO ]  合 作=22
+2023-11-28 16:49:09,714 [MainThread  ] [INFO ]  请 求=23
+2023-11-28 16:49:09,715 [MainThread  ] [INFO ]  见 面=24
+2023-11-28 16:49:09,715 [MainThread  ] [INFO ]  交 谈=25
+2023-11-28 16:49:09,715 [MainThread  ] [INFO ]  夫 妻=26
+2023-11-28 16:49:09,715 [MainThread  ] [INFO ]  死 于 （ 时 间 ）=27
+2023-11-28 16:49:09,716 [MainThread  ] [INFO ]  归 附 & 降=28
+2023-11-28 16:49:09,716 [MainThread  ] [INFO ]  同 僚=29
+2023-11-28 16:49:09,716 [MainThread  ] [INFO ]  地 点 别 名=30
+2023-11-28 16:49:09,716 [MainThread  ] [INFO ]  旧 属=31
+2023-11-28 16:49:09,717 [MainThread  ] [INFO ]  隶 属 于=32
+2023-11-28 16:49:09,717 [MainThread  ] [INFO ]  母=33
+2023-11-28 16:49:09,717 [MainThread  ] [INFO ]  作 者=34
+2023-11-28 16:49:09,717 [MainThread  ] [INFO ]  游 历 & 途 经=35
+2023-11-28 16:49:09,718 [MainThread  ] [INFO ]  旧 臣=36
+2023-11-28 16:49:09,718 [MainThread  ] [INFO ]  离 开=37
+2023-11-28 16:49:09,718 [MainThread  ] [INFO ]  治 所=38
+2023-11-28 16:49:09,718 [MainThread  ] [INFO ]  修 建=39
+2023-11-28 16:49:09,719 [MainThread  ] [INFO ]  死 于 （ 地 点 ）=40
+2023-11-28 16:49:09,719 [MainThread  ] [INFO ]  Dataset: test
+2023-11-28 16:49:09,719 [MainThread  ] [INFO ]  Document count: 401
+2023-11-28 16:49:09,719 [MainThread  ] [INFO ]  Relation count: 1350
+2023-11-28 16:49:09,720 [MainThread  ] [INFO ]  Entity count: 2621
+2023-11-28 16:49:13,494 [MainThread  ] [INFO ]  Evaluate: test
+Evaluate epoch 0: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 201/201 [00:15<00:00, 13.00it/s]
+Evaluation
+
+--- Entities (named entity recognition (NER)) ---
+An entity is considered correct if the entity type and span is predicted correctly
+
+                type    precision       recall     f1-score      support
+                 地 点        92.01        92.89        92.44          731
+                 人 物        94.67        96.38        95.52         1271
+                 职 官        83.14        89.87        86.37          395
+                 书 籍        89.19        89.19        89.19           74
+                 时 间        86.61        86.61        86.61          112
+                 团 体        56.41        57.89        57.14           38
+
+               micro        91.06        93.25        92.14         2621
+               macro        83.67        85.47        84.55         2621
+
+--- Relations ---
+
+Without named entity classification (NEC)
+A relation is considered correct if the relation type and the spans of the two related entities are predicted correctly (entity type is not considered)
+
+                type    precision       recall     f1-score      support
+           游 历 & 途 经       100.00        12.50        22.22            8
+                 同 僚        16.67         6.25         9.09           16
+                 交 谈        75.00        40.91        52.94           22
+                 旧 臣         0.00         0.00         0.00            1
+                 属 地        73.61        60.92        66.67           87
+                 管 理        81.69        65.17        72.50           89
+             归 附 & 降         0.00         0.00         0.00            5
+                 到 达        82.98        60.00        69.64           65
+         死 于 （ 地 点 ）         0.00         0.00         0.00            1
+                   父        70.83        47.22        56.67           36
+             政 治 奥 援        62.50        11.90        20.00           42
+                 派 遣        87.50        77.78        82.35           45
+     任 职 & 爵 位 & 谥 号        89.41        84.68        86.98          359
+                 旧 属       100.00        40.00        57.14            5
+                 治 所        50.00        33.33        40.00            3
+               隶 属 于        66.67         8.70        15.38           23
+                 投 靠       100.00        16.67        28.57            6
+                 打 败       100.00        20.00        33.33           10
+                 祖 孙        10.00        10.00        10.00           10
+                 修 建       100.00        14.29        25.00            7
+         死 于 （ 时 间 ）         0.00         0.00         0.00            3
+         生 于 （ 地 点 ）        94.59        74.47        83.33           47
+                 救 援       100.00         5.88        11.11           17
+                   杀        93.75        60.00        73.17           25
+                 见 面        28.57        16.67        21.05           12
+                 设 置        46.67        21.88        29.79           32
+                 攻 伐        88.00        52.38        65.67           84
+             封 & 赐 官        88.89        54.55        67.61           44
+                 夫 妻         0.00         0.00         0.00            5
+                 作 者        75.00        68.18        71.43           22
+                   母         0.00         0.00         0.00            1
+                 其 他        27.91        21.05        24.00           57
+                 别 名        46.15        37.50        41.38           16
+                 位 于        81.82        55.38        66.06           65
+                 兄 弟        83.33        25.00        38.46           20
+             地 点 别 名        64.71        39.29        48.89           28
+                 害 怕         0.00         0.00         0.00            2
+                 合 作       100.00        28.57        44.44            7
+                 请 求       100.00        12.50        22.22            8
+                 离 开        66.67        15.38        25.00           13
+
+               micro        79.37        55.64        65.42         1348
+               macro        61.32        29.97        37.05         1348
+
+With named entity classification (NEC)
+A relation is considered correct if the relation type and the two related entities are predicted correctly (in span and entity type)
+
+                type    precision       recall     f1-score      support
+           游 历 & 途 经       100.00        12.50        22.22            8
+                 同 僚        16.67         6.25         9.09           16
+                 交 谈        75.00        40.91        52.94           22
+                 旧 臣         0.00         0.00         0.00            1
+                 属 地        73.61        60.92        66.67           87
+                 管 理        81.69        65.17        72.50           89
+             归 附 & 降         0.00         0.00         0.00            5
+                 到 达        82.98        60.00        69.64           65
+         死 于 （ 地 点 ）         0.00         0.00         0.00            1
+                   父        70.83        47.22        56.67           36
+             政 治 奥 援        62.50        11.90        20.00           42
+                 派 遣        87.50        77.78        82.35           45
+     任 职 & 爵 位 & 谥 号        89.41        84.68        86.98          359
+                 旧 属       100.00        40.00        57.14            5
+                 治 所        50.00        33.33        40.00            3
+               隶 属 于        66.67         8.70        15.38           23
+                 投 靠       100.00        16.67        28.57            6
+                 打 败       100.00        20.00        33.33           10
+                 祖 孙        10.00        10.00        10.00           10
+                 修 建       100.00        14.29        25.00            7
+         死 于 （ 时 间 ）         0.00         0.00         0.00            3
+         生 于 （ 地 点 ）        94.59        74.47        83.33           47
+                 救 援       100.00         5.88        11.11           17
+                   杀        93.75        60.00        73.17           25
+                 见 面        28.57        16.67        21.05           12
+                 设 置        46.67        21.88        29.79           32
+                 攻 伐        88.00        52.38        65.67           84
+             封 & 赐 官        88.89        54.55        67.61           44
+                 夫 妻         0.00         0.00         0.00            5
+                 作 者        75.00        68.18        71.43           22
+                   母         0.00         0.00         0.00            1
+                 其 他        27.91        21.05        24.00           57
+                 别 名        46.15        37.50        41.38           16
+                 位 于        79.55        53.85        64.22           65
+                 兄 弟        83.33        25.00        38.46           20
+             地 点 别 名        64.71        39.29        48.89           28
+                 害 怕         0.00         0.00         0.00            2
+                 合 作       100.00        28.57        44.44            7
+                 请 求       100.00        12.50        22.22            8
+                 离 开        66.67        15.38        25.00           13
+
+               micro        79.26        55.56        65.33         1348
+               macro        61.27        29.94        37.01         1348
+预测结果存储地址 data/log/chisre/2023-11-28_16:49:08.829229/predictions_test_epoch_0.json
+2023-11-28 16:49:31,378 [MainThread  ] [INFO ]  Logged in: data/log/chisre/2023-11-28_16:49:08.829229
