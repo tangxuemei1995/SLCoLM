@@ -1,42 +1,74 @@
-# Language Model Collaboration for Relation Extraction from Classical Chinese Historical Documents
 
-This repository contains the code and data for the paper "Language model collaboration for relation extraction from classical Chinese historical documents". It includes an implementation of the SpERT small model and an SLM+LLM collaboration framework, together with evaluation scripts.
+# 📜 Language Model Collaboration for Relation Extraction from Classical Chinese Historical Documents
 
-## Data
-- Data is stored in the `chisre/` directory.
-- `test.json` and `chisre_test.json` contain the same records but use different formats. Choose the file required by each script.
+This repository contains the code and data accompanying the paper **“Language Model Collaboration for Relation Extraction from Classical Chinese Historical Documents.”**
+It provides implementations for the **SpERT small model** and a **Small-Language-Model + Large-Language-Model (SLM+LLM) collaboration framework**, along with evaluation scripts.
 
-## Code layout
-- `./code/span/` — SpERT small-model implementation (see: https://arxiv.org/abs/1909.07755).
-- `./code/SLCoLM/` — Implementation and examples for the SLM+LLM collaboration framework.
+---
 
+## 📂 Data
 
-In SLCoLM Main scripts:
-- `python model_collaboration.py`  
-    Generate relation triplets based on SpERT predictions, relation type definitions, and example-driven outputs. 
-- `python eval.py`  
-    Evaluate generated outputs. Verify the evaluation script input path and expected format before running.
+* All datasets are located in the `chisre/` directory.
+* `test.json` and `chisre_test.json` contain the **same records** but in **different formats**.
+  ➤ Use the file required by each specific script.
 
-## Usage recommendations
-- Use Python 3.8+ and install project dependencies (if a `requirements.txt` file is provided).
-- Before running, confirm paths for data, model weights, and configuration files. Adjust path variables inside scripts if needed.
-- If you encounter format or path issues, check the top of each script for configurable variables or search the repository for `config` / `paths` settings.
+---
 
-## Citation
-If you use this work, please cite:
+## 🧭 Repository Structure
+
+### 🔧 Code Layout
+
+* `./code/span/` — SpERT small-model implementation
+  （Reference: [https://arxiv.org/abs/1909.07755）](https://arxiv.org/abs/1909.07755）)
+* `./code/SLCoLM/` — SLM+LLM collaboration framework (code + examples)
+
+### ▶️ Main Scripts in SLCoLM
+
+* **`python model_collaboration.py`**
+  🤝 Generates relation triplets using SpERT predictions, relation schemas, and example-driven generation.
+* **`python eval.py`**
+  📝 Evaluates the generated outputs.
+  Make sure the input file path and expected format match what the script requires.
+
+---
+
+## 💡 Usage Recommendations
+
+* Use **Python ≥ 3.8**.
+* Install dependencies via `requirements.txt` (if provided).
+* Before running scripts, double-check:
+
+  * 📁 Data paths
+  * 🧩 Model weight paths
+  * ⚙️ Config files
+* If you encounter errors, inspect the top of the script for configurable variables or search for `config` or `paths` in the repo.
+
+---
+
+## 📖 Citation
+
+If you use this repository in your research, please cite:
 
 ```
 @article{Tang_Wang_Wang_2026,
-        title={Language model collaboration for relation extraction from classical Chinese historical documents},
-        volume={63},
-        ISSN={0306-4573},
-        DOI={10.1016/j.ipm.2025.104286},
-        number={1},
-        journal={Information Processing & Management},
-        author={Tang, Xuemei and Wang, Linxu and Wang, Jun},
-        year={2026},
-        month=jan,
-        pages={104286}
+  title={Language model collaboration for relation extraction from classical Chinese historical documents},
+  volume={63},
+  ISSN={0306-4573},
+  DOI={10.1016/j.ipm.2025.104286},
+  number={1},
+  journal={Information Processing & Management},
+  author={Tang, Xuemei and Wang, Linxu and Wang, Jun},
+  year={2026},
+  month=jan,
+  pages={104286}
 }
 ```
-if you have any question, open a issue or send a email to me (xuemeitang00@gmail.com).
+
+---
+
+## 📬 Contact
+
+If you have any questions, feel free to:
+
+* 🐞 Open an issue
+* ✉️ Email me at **[xuemeitang00@gmail.com](mailto:xuemeitang00@gmail.com)**
